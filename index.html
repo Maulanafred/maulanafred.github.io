@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Vertical Layout</title>
+    <title>Maulana Frediansyah Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,46 +12,43 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #f0f0f0;
+            background-image: url('background.jpeg'); /* Ganti 'background.jpg' dengan path gambar background Anda */
+            background-size: cover;
+            background-position: center;
         }
-        .section {
+        .button-container {
             width: 80%;
             max-width: 800px;
-            background-color: #fff;
-            padding: 20px;
             margin: 20px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            text-align: center;
         }
-        h2 {
-            margin-top: 0;
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .button:hover {
+            background-color: #333;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <div class="section" id="about">
-        <h2>About</h2>
-        <p>This section contains information about the website or the person behind it.</p>
-    </div>
-    <div class="section" id="services">
-        <h2>Services</h2>
-        <p>This section outlines the services offered.</p>
-    </div>
-    <div class="section" id="portfolio">
-        <h2>Portfolio</h2>
-        <p>This section showcases past work or projects.</p>
-    </div>
-    <div class="section" id="team">
-        <h2>Team</h2>
-        <p>This section introduces the team members.</p>
-    </div>
-    <div class="section" id="contact">
-        <h2>Contact</h2>
-        <p>This section provides contact information or a contact form.</p>
-    </div>
-    <div class="section" id="blog">
-        <h2>Blog</h2>
-        <p>This section contains blog posts or articles.</p>
+    <div class="button-container">
+        <a href="#about" class="button">About</a>
+        <a href="#services" class="button">Services</a>
+        <a href="#portfolio" class="button">Portfolio</a>
+        <a href="#team" class="button">Team</a>
+        <a href="#contact" class="button">Contact</a>
+        <a href="#blog" class="button">Blog</a>
     </div>
 </body>
 </html>
